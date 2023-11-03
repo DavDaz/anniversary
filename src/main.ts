@@ -4,6 +4,10 @@ import secuencia2 from './secuencia2.jpg'
 import mvmm from './mvmm.jpg'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+<audio id="miAudio" loop autoplay controls>
+<source src="src/juanes.mp3" type="audio/mpeg">
+</audio>
+
   <div class="letter">
   <h1>Mi Amada Princesa María</h1>
   <p>
@@ -55,7 +59,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   
   <img src="${mvmm}" alt="secuencia 2" style="max-width: 100%;" />
 </div>
-
-
 `
 

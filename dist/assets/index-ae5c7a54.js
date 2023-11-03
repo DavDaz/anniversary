@@ -1,4 +1,8 @@
-(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const s of e)if(s.type==="childList")for(const a of s.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&r(a)}).observe(document,{childList:!0,subtree:!0});function t(e){const s={};return e.integrity&&(s.integrity=e.integrity),e.referrerPolicy&&(s.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?s.credentials="include":e.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function r(e){if(e.ep)return;e.ep=!0;const s=t(e);fetch(e.href,s)}})();const n="/assets/secuencia-afe5ecda.jpg",i="/assets/secuencia2-00b4f926.jpg",c="/assets/mvmm-dff3a1c9.jpg";document.querySelector("#app").innerHTML=`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const o of e)if(o.type==="childList")for(const a of o.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&r(a)}).observe(document,{childList:!0,subtree:!0});function t(e){const o={};return e.integrity&&(o.integrity=e.integrity),e.referrerPolicy&&(o.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?o.credentials="include":e.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(e){if(e.ep)return;e.ep=!0;const o=t(e);fetch(e.href,o)}})();const n="/assets/secuencia-afe5ecda.jpg",i="/assets/secuencia2-00b4f926.jpg",u="/assets/mvmm-dff3a1c9.jpg";document.querySelector("#app").innerHTML=`
+<audio id="miAudio" loop autoplay controls>
+<source src="src/juanes.mp3" type="audio/mpeg">
+</audio>
+
   <div class="letter">
   <h1>Mi Amada Princesa María</h1>
   <p>
@@ -48,8 +52,6 @@
   <h2>Te amo,</h2>
   <h3>Att: DADB</h3>
   
-  <img src="${c}" alt="secuencia 2" style="max-width: 100%;" />
+  <img src="${u}" alt="secuencia 2" style="max-width: 100%;" />
 </div>
-
-
 `;
