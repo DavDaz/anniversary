@@ -2,12 +2,14 @@
   "name": "anniversary",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://davdaz.github.io/anniversary/",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.0.0",
